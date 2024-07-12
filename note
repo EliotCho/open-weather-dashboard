@@ -1,4 +1,0 @@
-openWeatherAPI = 07c88c124e211064fcdb182acb1f77ea
-
-
-api.openweathermap.org/data/2.5/forecast?q={city name}&appid={API key}
