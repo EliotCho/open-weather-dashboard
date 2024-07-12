@@ -40,7 +40,7 @@ function createHistoryButton() {
 }
 
 function renderCurrentWeather(city, weather) {
-  // console.log(weather);
+  console.log(weather);
   const temp = weather.list[0].main.temp;
   const humidity = weather.list[0].main.humidity;
   const windSpeed = weather.list[0].wind.speed;
