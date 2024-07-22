@@ -30,5 +30,7 @@ Page link: https://eliotcho.github.io/open-weather-dashboard/
 
 The following image shows the web application's appearance and functionality:
 Main page
+![Screenshot of main page](./assets/images/main-page.png)
 
-![Screenshot of main page]()
+When search history goes over 10 searches
+![Screenshot of main page](./assets/images/over-10-search.png)
