@@ -87,7 +87,7 @@ function createHistoryButton() {
   for (let i in cityList) {
     const newButton = document.createElement("button");
     newButton.innerHTML = `
-    <p class="history-button btn btn-link m-2">${cityList[i]}</p>
+    <p class="history-button m-2">${cityList[i]}</p>
     `;
     // newButton.classList.add("history-button");
     // newButton.textContent = cityList[i];
