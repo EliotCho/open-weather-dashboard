@@ -14,9 +14,14 @@ function getData() {
   // replace special characters with empty string
   city = city.replace(/[&\/\\#,+()$~%.'":*?<>{}]/g, "");
   // convert city name to lowercase
-  city = city.toLowerCase();
-  // capitalize first letter of city name
-  city = city.charAt(0).toUpperCase() + city.slice(1);
+  city = city.toLowerCase().split(" ");
+
+  // capitalize first letter of each word in city name
+  for (let i = 0; i < city.length; i++) {
+    city[i] = city[i].charAt(0).toUpperCase() + city[i].substring(1);
+  }
+  // join the words in the city name
+  city = city.join(" ");
 
   const api_url = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${API_key}&units=metric`;
   fetch(api_url)
